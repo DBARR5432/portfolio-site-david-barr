@@ -8,12 +8,16 @@
     <meta name="description" content="This is the home page of my website">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Barr's UX/UI Design Portfolio Site</title>
 </head>
-<body>
+<body id="landing-page">
 
-    <header>
+    <header id="header">
         <div>    
             <a href="index.html">David Barr</a>
             <img src="https://placehold.co/150x50" alt="David Barr Logo">
@@ -27,12 +31,11 @@
         </div>
     </header>
 
-    <main>
+    <main id="hero-section">
 
         <div><!-- open hero section-->
-            <div>
-                <h1>Hi, my name is David Barr <span>I'm an aspiring UI Designer based in Dallas.</span></h1>
-                    
+            <div style="background-color: #272b24; color: #cbd4c2">
+                <h1 style="color: #cbd4c2">Hi, my name is David Barr. <span>I'm an aspiring UI Designer based in Dallas.</span></h1>                    
                         <p>I’m a former musician that has decided to look into another creative field for career possibilities. 
                             This website is to showcase what I’ve learned, what I’ve done, and what I hope to accomplish.
                         </p>
@@ -40,7 +43,7 @@
         </div>    
 
         <div><!-- open row that holds (2) columns for project-->
-            <h1>My Work</h1>
+            <h2>My Work</h2>
             <div><!-- open first column (used for image)-->
                <picture>
                 <source srcset="img/homepageimages/gigpalHomepageImageSmall.png" media="(max-width:767px)">
@@ -54,7 +57,7 @@
                     specifically for musicians, bands, and venues to aid in the process
                     of finding one another, and getting gigs booked.
                 </p><!-- end paragraph-->
-                <a href="pageGigpal.html" class="button">View Project</a><!-- button or link label-->
+                <a href="pageGigpal.html" class="button-primary">View Project</a><!-- button or link label-->
             </div><!--end second column-->
         </div><!-- end row that holds (2) columns for project-->
 
@@ -72,7 +75,7 @@
                     people who want a simplified shopping experience, and may
                     not be as comfortable with technology as the average person.
                 </p><!-- end paragraph-->
-                <a href="pageToolist.html">View Project</a><!-- button or link label-->
+                <a href="pageToolist.html" class="button-primary">View Project</a><!-- button or link label-->
             </div><!--end second column-->
         </div><!-- end row that holds (2) columns for project-->
 
@@ -80,14 +83,14 @@
 
     <footer id="contact">
         <div>
-            <h3>Get in Touch</h3>
+            <h3 style="color:#cbd4c2">Get in Touch</h3>
             <p>
                 Do you like my work and want to discuss opportunities? Please get in touch. 
                 Call: <a href="tel:+5555555">+555-5555</a> or Skype me at <a href="skype:hello.careerfoundry"></a> 
                 hello.careerfoundry. Prefer sending an email?
             </p>
             <div>
-                <a href="mailto:davidmbarr@gmail.com">Send Email</a>
+                <a href="mailto:davidmbarr@gmail.com" class="button-secondary">Send Email</a>
             </div>
 
             <div>
