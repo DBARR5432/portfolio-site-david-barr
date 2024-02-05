@@ -58,6 +58,10 @@ Black #0E100B
 }
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fffcff;
     font-family: 'Gudea', sans-serif;
@@ -65,6 +69,44 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: #0e100b;
+}
+
+header {
+    background-color: #272b24;
+    padding: 10px 0;
+    text-align: center;
+    /* margin: 0px 15px; */
+    border-bottom: 3px solid #247ba0;
+    color: #cbd4c2;
+    position: fixed;   
+    width: 100%;
+}
+
+main {
+    padding-top: 147px;
+}
+
+footer {
+    background-color: #272b24;
+    color: #cbd4c2;
+    margin: 0;
+}
+
+
+
+nav > ul { /*unordered lists in any nav section*/
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li { /*forcing list items from unordered lists in nav sections to exist on the same line with each other*/
+    display: inline-block;
+}
+
+nav > ul > li > a { /*altering text within the unordered list items*/
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -75,43 +117,36 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 3.53em;
+    font-size: 1.75em;
     font-weight: 700;
 }
 h2 {
-    font-size: 2.66em;
+    font-size: 1.313em;
     font-weight: 700;
 }
 h3 {
-    font-size: 2.0em;
+    font-size: 1em;
     font-weight: 700;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: .75em;
     font-weight: 700;
-}
-h5 {
-    font-size: 1.125em;
-    font-weight: 600;
-}
-h6 {
-    font-size: .843em;
-    font-weight: 600;
-}
-
-header {
-    background-color: #272b24;
-    color: #cbd4c2
-}
-
-footer {
-    background-color: #272b24;
-    color: #cbd4c2;
 }
 
 img {
     width: 100%;
 }
+
+span {
+    font-size: .75em;
+    font-weight: 700    
+}
+
+.hero-span {
+    display: block;
+}
+
+
 
 a { /*links*/
    color: #cbd4c2;
@@ -128,7 +163,7 @@ a:active {
     color: #247ba0;
 }
 
-.button-primary {
+.button-primary { /*buttons*/
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #247ba0;
   color: #cbd4c2; /* needed to override the default link color */
@@ -156,4 +191,73 @@ a:active {
     opacity: .8;
     color: #247ba0;
     text-decoration: none;
+}
+
+.button-primary,.button-secondary {
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.hero-section {
+    background-color: #272b24;
+    padding: 10 10;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 3px #247BA0;
+    text-align: justify;
+}
+
+.hero-section > div {
+    padding: 0 15px;
+    margin: 1em;
+}
+
+.hero-section > div > p {
+    margin: 0 1em;
+}
+
+.about-section
+
+.row {
+    margin: 25px 0;
+}
+
+#main h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+/* #main {
+    padding: 20px 0;
+} */
+
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #272b24; 
+	border-bottom: 3px solid #247BA0 0; 
+	box-shadow: 0 2px 6px rgba(64, 64, 64, 0.7)  ; 
+	-webkit-box-shadow: 0 2px 6px rgba(64, 64, 64, 0.7)  ; 
+	-moz-box-shadow: 0 2px 6px rgba(64, 64, 64, 0.7)  ; 
+}
+
+#contact {
+    text-align: center;
+}
+
+#justify {
+    text-align: justify;
 }
