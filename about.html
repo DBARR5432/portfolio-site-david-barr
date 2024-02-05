@@ -18,9 +18,8 @@
 <body id="about-page">
 
     <header id="header">
-        <div>    
-            <a href="index.html">David Barr</a>
-            <img src="https://placehold.co/150x50" alt="David Barr Logo">
+        <div class="container">    
+            <a href="index.html"><img class="logo" src="img/logoDB.png" alt="David Barr Logo"></a>            
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -31,74 +30,74 @@
         </div>
     </header>
 
-    <main id="hero-section">
-
-        <div><!--open about section-->
-            <div>
-                <h1>About</h1>
+    <main id="main">
+        <div class="about-section">
+            <div class="container"><!--open about section-->
+                <div>
+                    <h1>About</h1>
+                </div>
             </div>
+
+            <div class="container"><!--2nd div for story, skills-->
+                <div><!--container for both columns-->
+                    <picture>
+                        <source srcset="img/aboutPageImageSmall.png" media="(max-width:767px)">
+                        <img src="img/aboutPageImage.png" alt="Black And White Instrument Photo">
+                    </picture>
+                    <div><!--row for columns-->
+                        <div><!--column 1 "my story" and "download resume" button-->
+                            <h2>My Story</h2>
+                            <p>
+                                Over the last several years I have decided a change in profession would be beneficial. It was a difficult 
+                                decision to leave music, but I believe my experience in that field will actually be a benefit as I move forward 
+                                in a different field that still has many creative elements within it.
+                            </p>
+                            <p>
+                                I’d tried a few coding courses in the past, but nothing that really clicked with me. In the Spring of 2022 I took
+                                a Project Management course through Google, as I thought my soft skills would translate well.While I think I 
+                                could’ve continued learning and possibly become a PM at some point, all that course really did was make me 
+                                realize I don’t really want to be a project manager.
+                            </p>
+                            <p>
+                                A while later I started looking into UX/UI design, and decided that UI was a field that interested me. Now, a 
+                                little more than a year later I have completed the Career Foundry UI Design course, and I’m simply trying to 
+                                further develop my skills, refine my portfolio, and see if I can turn all this education into a new career 
+                                path!
+                            </p>
+                            <a href="files/generalResume1.pdf" target="_blank" class="button-primary">Download Resume</a>
+                        </div><!--close column 1-->
+
+                        <div><!--column 2 skills and tools-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div><!--column for relevant skills-->
+                                <h3>Relevant Skills</h3>
+                                <ul>
+                                    <li>User Research and Synthesis</li>
+                                    <li>User Testing</li>
+                                    <li>Wireframing</li>
+                                    <li>UI Design</li>
+                                    <li>Prototyping</li>
+                                </ul>
+                            </div>
+                            <div><!--column for tools I use-->
+                                <h3>Tools I Use</h3>
+                                <ul>
+                                    <li>Figma</li>
+                                </ul>
+                            </div>
+                        </div><!--close column 2-->
+
+                    </div><!--close row for both columns-->
+                </div><!--close content container-->
+            </div><!--close 2nd div for story and skills-->
         </div>
-
-        <div><!--2nd div for story, skills-->
-            <div><!--container for both columns-->
-                <picture>
-                    <source srcset="img/aboutPageImageSmall.png" media="(max-width:767px)">
-                    <img src="img/aboutPageImage.png" alt="Black And White Instrument Photo">
-                </picture>
-                <div><!--row for columns-->
-                    <div><!--column 1 "my story" and "download resume" button-->
-                        <h2>My Story</h2>
-                        <p>
-                            Over the last several years I have decided a change in profession would be beneficial. It was a difficult 
-                            decision to leave music, but I believe my experience in that field will actually be a benefit as I move forward 
-                            in a different field that still has many creative elements within it.
-                        </p>
-                        <p>
-                            I’d tried a few coding courses in the past, but nothing that really clicked with me. In the Spring of 2022 I took
-                             a Project Management course through Google, as I thought my soft skills would translate well.While I think I 
-                             could’ve continued learning and possibly become a PM at some point, all that course really did was make me 
-                             realize I don’t really want to be a project manager.
-                        </p>
-                        <p>
-                            A while later I started looking into UX/UI design, and decided that UI was a field that interested me. Now, a 
-                            little more than a year later I have completed the Career Foundry UI Design course, and I’m simply trying to 
-                            further develop my skills, refine my portfolio, and see if I can turn all this education into a new career 
-                            path!
-                        </p>
-                        <a href="files/generalResume1.pdf" target="_blank" class="button-primary">Download Resume</a>
-                    </div><!--close column 1-->
-
-                    <div><!--column 2 skills and tools-->
-                        <h2>Skills &amp; Tools</h2>
-                        <div><!--column for relevant skills-->
-                            <h3>Relevant Skills</h3>
-                            <ul>
-                                <li>User Research and Synthesis</li>
-                                <li>User Testing</li>
-                                <li>Wireframing</li>
-                                <li>UI Design</li>
-                                <li>Prototyping</li>
-                            </ul>
-                        </div>
-                        <div><!--column for tools I use-->
-                            <h3>Tools I Use</h3>
-                            <ul>
-                                <li>Figma</li>
-                            </ul>
-                        </div>
-                    </div><!--close column 2-->
-
-                </div><!--close row for both columns-->
-            </div><!--close content container-->
-        </div><!--close 2nd div for story and skills-->
-
 
     </main>
 
     <footer id="contact">
-        <div>
-            <h3 style="color:#cbd4c2">Get in Touch</h3>
-            <p>
+        <div class="container">
+            <h2 style="color:#cbd4c2">Get in Touch</h2>
+            <p id="justify">
                 Do you like my work and want to discuss opportunities? Please get in touch. 
                 Call: <a href="tel:+5555555">+555-5555</a> or Skype me at <a href="skype:hello.careerfoundry"></a> 
                 hello.careerfoundry. Prefer sending an email?
@@ -107,7 +106,7 @@
                 <a href="mailto:davidmbarr@gmail.com" class="button-secondary">Send Email</a>
             </div>
 
-            <div>
+            <div class="container-links">
                 <!--Social Media Layout and Placeholders-->
                 <a href="https://www.linkedin.com" target="_blank">
                     <svg enable-background="new 0 0 32 32" height="32px" id="linkedinsvg" viewBox="0 0 32 32" width="32px" xml:space="preserve" 
@@ -136,7 +135,7 @@
                 </a>
 
                 <a href="https://www.behance.net" target="_blank">
-                    <svg data-name="Layer 45" height="24" id="behancesvg" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <svg data-name="Layer 45" height="32" id="behancesvg" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
                         <title/><path d="M21.89233,15.68733A4.125,4.125,0,0,1,17.69541,18.617c-2.68958,0-4.752-1.24056-4.752-5.015a4.31723,4.31723,0,0,1,
                         4.57219-4.63577C19.39927,8.96622,22,9.82808,22,14.01584v.48093H15.45322a2.05435,2.05435,0,0,0,2.24219,2.19,1.61592,1.61592,0,0,0,
                         1.614-.99948ZM19.417,13a2.01569,2.01569,0,0,0-1.937-2.0519c-1.18329,0-1.81152.8455-1.95473,2.0519Z" style="fill:#4c9ae8"/>
