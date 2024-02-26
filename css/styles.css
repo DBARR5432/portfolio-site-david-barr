@@ -330,6 +330,11 @@ a:active {
     padding-bottom: 15px;
 }
 
+.indent {
+    text-indent: 30px;
+    padding-bottom: 15px;
+}
+
 /* [class*="col-"] {
     float: left;
 } */
@@ -413,6 +418,11 @@ a:active {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+    }
+
+    .hero-container {
+        max-width: 1024px;
+        margin: 0 auto 0 auto;
     }
 
     .col-lg-8 {
