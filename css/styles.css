@@ -63,7 +63,7 @@ Black #0E100B
 }
 
 body {
-    background-color: #fffcff;
+    background-color: #272b24;
     font-family: 'Gudea', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -84,6 +84,7 @@ header {
 
 main {
     padding-top: 147px;
+    background-color: #fffcff;
 }
 
 footer {
@@ -110,7 +111,7 @@ nav > ul > li > a { /*altering text within the unordered list items*/
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: #0e100b;
+    /* color: #0e100b; */
     font-family: 'Karma', serif;
     font-size: 16px;
     line-height: 1.6;
@@ -123,18 +124,30 @@ h1 {
 h2 {
     font-size: 1.313em;
     font-weight: 700;
+    padding-top: 15px;
 }
 h3 {
     font-size: 1em;
     font-weight: 700;
+    margin: 0;
 }
 h4 {
     font-size: .75em;
     font-weight: 700;
 }
 
+p {
+    margin: 0;
+}
+
 img {
     width: 100%;
+    border: solid 1px #247BA0;
+    border-radius: 20px;
+}
+
+.social-img {
+    border: none;
 }
 
 span {
@@ -195,7 +208,7 @@ a:active {
 }
 
 .button-primary,.button-secondary {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .container {
@@ -229,6 +242,10 @@ a:active {
     content: "";
     clear: both;
     display: table;
+}
+
+.row li {
+    text-align: left;
 }
 
 #main h1, h2 {
@@ -267,6 +284,7 @@ a:active {
 
 #contact {
     text-align: center;
+    max-width: 640px;
 }
 
 #justify {
@@ -277,7 +295,40 @@ a:active {
     text-align: justify;
 }
 
+.social-links > ul {
+    padding: 0px;
+}
 
+.social-links > ul > li {
+    display:inline-block;
+    margin: 0 5px;
+    height: 32px;
+    width: 32px;
+    list-style-type: none;
+}
+
+.about-picture {
+    width: 50%;
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 5%;
+}
+
+.project-header {
+    margin: 0;
+}
+
+.project-picture {
+    width: 100%;
+}
+
+#page-header {
+    padding-top: 10px;
+}
+
+.project-paragraph {
+    padding-bottom: 15px;
+}
 
 /* [class*="col-"] {
     float: left;
@@ -302,7 +353,7 @@ a:active {
         padding-top: 103px;
     }
 
-    #about-page h3, ul {
+    #about-page h3 > ul {
         margin: 5px 1em 5px 20px;
         text-align: justify;
     }
@@ -332,10 +383,19 @@ a:active {
         padding: 10px;
     }
 
+    #contact {
+        margin: 0 auto;
+    }
+    
+    /*This almost does what I want it to do. The container just starts to hug
+    the left side of the screen when it gets past a certain size*/
+    /* #project-container {
+        max-width: 768px;
+        padding: 0 15px;
+    } */
+
     /* .container {
         max-width: 640px;
-        margin-left: 1em;
-        margin-right: 1em;
     } */
 
 }
@@ -362,6 +422,21 @@ a:active {
     .col-lg-4 {
         width: 33.32%;
     }
+
+    .project-paragraph {
+        text-align: justify;
+        margin-right: 0%;
+    }
+
+    .project-paragraph-hero {
+        margin: 0 20% 0 20%;
+    }
+
+    /*This almost does what I want it to do. The container just starts to hug
+    the left side of the screen when it gets past a certain size*/
+    /* #project-container {
+        margin: 0 10% 0 10%;
+    } */
 
 }
 
