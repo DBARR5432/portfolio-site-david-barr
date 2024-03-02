@@ -83,7 +83,7 @@ header {
 }
 
 main {
-    padding-top: 147px;
+    padding-top: 66px;
     background-color: #fffcff;
 }
 
@@ -98,11 +98,12 @@ footer {
 nav > ul { /*unordered lists in any nav section*/
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-nav > ul > li { /*forcing list items from unordered lists in nav sections to exist on the same line with each other*/
+/* nav > ul > li {
     display: inline-block;
-}
+} */
 
 nav > ul > li > a { /*altering text within the unordered list items*/
     padding: 0 15px;
@@ -258,7 +259,9 @@ a:active {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
+    border-radius: 0;
+    border: none;
 }
 
 .berlin-illustration { /* didn't really have any effect since the svg is already in a container class div */
@@ -335,6 +338,36 @@ a:active {
     padding-bottom: 15px;
 }
 
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #247BA0;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
 /* [class*="col-"] {
     float: left;
 } */
@@ -345,7 +378,7 @@ a:active {
     
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 10px 0 4px;
     }
 
     nav {
@@ -355,7 +388,15 @@ a:active {
     }
 
     main {
-        padding-top: 103px;
+        padding-top: 79px;
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
     }
 
     #about-page h3 > ul {
@@ -390,6 +431,14 @@ a:active {
 
     #contact {
         margin: 0 auto;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
     }
     
     /*This almost does what I want it to do. The container just starts to hug
