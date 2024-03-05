@@ -62,6 +62,10 @@ Black #0E100B
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #272b24;
     font-family: 'Gudea', sans-serif;
@@ -74,41 +78,12 @@ body {
 header {
     background-color: #272b24;
     padding: 10px 0;
-    text-align: center;
+    text-align: unset;
     /* margin: 0px 15px; */
     border-bottom: 3px solid #247ba0;
     color: #cbd4c2;
     position: fixed;   
     width: 100%;
-}
-
-main {
-    padding-top: 66px;
-    background-color: #fffcff;
-}
-
-footer {
-    background-color: #272b24;
-    color: #cbd4c2;
-    margin: 0;
-}
-
-
-
-nav > ul { /*unordered lists in any nav section*/
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* nav > ul > li {
-    display: inline-block;
-} */
-
-nav > ul > li > a { /*altering text within the unordered list items*/
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 400;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -136,6 +111,42 @@ h4 {
     font-size: .75em;
     font-weight: 700;
 }
+
+main {
+    padding-top: 66px;
+    background-color: #fffcff;
+}
+
+footer {
+    background-color: #272b24;
+    color: #cbd4c2;
+    margin: 0;
+}
+
+
+
+nav > ul { /*unordered lists in any nav section*/
+    list-style-type: none;
+    padding: 0;
+    /* margin: 0; */
+}
+
+/* nav > ul > li {
+    display: inline-block;
+} */
+
+nav > ul > li > a { /*altering text within the unordered list items*/
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+nav {
+    width: auto;
+    float: right;
+}
+
+
 
 p {
     margin: 0;
@@ -239,11 +250,7 @@ a:active {
     text-align: justify;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
 
 .row li {
     text-align: left;
@@ -338,14 +345,6 @@ a:active {
     padding-bottom: 15px;
 }
 
-.navtoggle li:not(:last-child) {
-    display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-    position: relative;
-}
-
 .navtoggle li .icon {
     position: absolute;
     right: 0px;
@@ -354,23 +353,45 @@ a:active {
     padding-right: 0;
 }
 
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 0px;
+    margin-top: 25px;
+    margin-bottom: -51%;
+    background-color: #50514f;
+}
+
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
     border-top: 1px solid #247BA0;
 }
 
-.navtoggle.responsive nav {
-    padding: 24px 0 0;
-}
 
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
 }
 
-/* [class*="col-"] {
+.navigation {
+    margin: 10px 0 0 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
     float: left;
-} */
+}
 
 /*media queries, put these last*/
 
@@ -384,19 +405,26 @@ a:active {
     nav {
         width: auto;
         float: right;
-        margin-top: 4px;
     }
 
     main {
-        padding-top: 79px;
+        padding-top: 60px;
     }
-
+/* 
     nav > ul {
         margin: 1em 0;
-    }
+    } */
 
     nav > ul > li {
         display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
     }
 
     #about-page h3 > ul {
@@ -433,13 +461,7 @@ a:active {
         margin: 0 auto;
     }
 
-    .navtoggle li:not(:last-child) {
-        display: inline-block;
-    }
-
-    .navtoggle li:last-child {
-        display: none;
-    }
+    
     
     /*This almost does what I want it to do. The container just starts to hug
     the left side of the screen when it gets past a certain size*/
