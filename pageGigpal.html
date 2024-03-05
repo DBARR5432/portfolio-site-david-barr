@@ -20,14 +20,22 @@
 
     <header id="header" class="css-box-shadow">
         <div class="container">   
-            <div class="navtoggle" id="myNavToggle">
-            <a href="index.html"><img class="logo" src="img/logoDB.png" alt="David Barr Logo"></a>         
+            <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+                <img class="logo" src="img/logoDB.png" alt="David Barr Logo">
+            </a>         
             <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
+                <ul class="navigation">
+                    <li class="active"><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                    <li><a href="javascirpt:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li>
+                        <p id="click_advance">
+                        <a href="javascirpt:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        </p>
+                    </li>
                 </ul>    
             </nav>
             </div>
