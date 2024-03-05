@@ -1,10 +1,15 @@
 console.log("Portfolio Site");
 
-function menuToggle() {
-    var x = document.getElementById('myNavToggle');
-    if (x.className === 'navToggle') {
+function menuToggle(x) {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') {
     x.className += ' responsive';
     } else {
-        x.className = 'navToggle';
+        x.className = 'navtoggle';
     }
 }
+
+$('#click_advance').click(function() {
+    $('display_advance').toggle('1000');
+    $("i", this).toggleClass("fas fa-bars fas fa-x");
+});
