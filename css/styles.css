@@ -171,8 +171,6 @@ span {
     display: block;
 }
 
-
-
 a { /*links*/
    color: #cbd4c2;
    text-decoration: none; 
@@ -189,33 +187,37 @@ a:active {
 }
 
 .button-primary { /*buttons*/
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #247ba0;
-  color: #cbd4c2; /* needed to override the default link color */
+  color: #fffcff;
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
   transition: 0.2s opacity;
 }
+
+a.button-primary {
+    color: #fffcff;
+}
+
 .button-primary:hover {
     opacity: .8;
     text-decoration:none;
-    color:#cbd4c2;
 }
 .button-secondary {
     display: inline-block;
     background-color: #cbd4c2;
-    color: #247ba0;
-    font-weight: 400;
+    color: #0e100b;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid #247ba0;
+    /* border: 2px solid #247ba0; */
     border-radius: 10px;
-    border-color: #247ba0;
+    /* border-color: #247ba0; */
     transition: .2s opacity;
 }
 .button-secondary:hover {
     opacity: .8;
-    color: #247ba0;
+    color: #0e100b;
     text-decoration: none;
 }
 
@@ -250,7 +252,10 @@ a:active {
     text-align: justify;
 }
 
-
+.hero-paragraph {
+    max-width: 768px;
+    margin: 0 auto;
+}
 
 .row li {
     text-align: left;
@@ -301,6 +306,10 @@ a:active {
     text-align: justify;
 }
 
+#left-align {
+    text-align: left;
+}
+
 .column > h3 > p {
     text-align: justify;
 }
@@ -338,6 +347,7 @@ a:active {
 
 .project-paragraph {
     padding-bottom: 15px;
+    text-align: left;
 }
 
 .indent {
@@ -410,6 +420,13 @@ a:active {
     main {
         padding-top: 60px;
     }
+
+    .container {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
 /* 
     nav > ul {
         margin: 1em 0;
@@ -485,14 +502,9 @@ a:active {
     text-align: center;
    }
 
-   .container {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    }
 
     .hero-container {
-        max-width: 1024px;
+        max-width: 768px;
         margin: 0 auto 0 auto;
     }
 
@@ -505,7 +517,6 @@ a:active {
     }
 
     .project-paragraph {
-        text-align: justify;
         margin-right: 0%;
     }
 
@@ -523,13 +534,19 @@ a:active {
 
 @media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1440px;
+        max-width: 1040px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 @media only screen and (min-width: 1920px) {
+    .container {
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     body {
         font-size: 20px;
     }
